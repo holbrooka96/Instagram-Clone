@@ -5,7 +5,7 @@ const posts = [
         location: "Zundert, Netherlands",
         avatar: "/avatar-vangogh.jpg",
         post: "/post-vangogh.jpg",
-        comment: "just took a few mushrooms lol",
+        comment: "woah what up everybody lol",
         likes: 21
     },
     {
