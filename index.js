@@ -30,9 +30,9 @@ const posts = [
 const mainEl = document.querySelector('.posts');
 const postTemplate = mainEl.innerHTML
 
-window.getPostCount = function() {
+function getPostCount() {
     let temp = ""
-    for (i = 0; i < posts.length; i++) {
+    for (let i = 0; i < posts.length; i++) {
             mainEl.innerHTML = postTemplate
             renderPost(i)
             temp += mainEl.innerHTML
@@ -40,7 +40,7 @@ window.getPostCount = function() {
             mainEl.innerHTML  = temp
 }
 
-window.renderPost = function(num) {
+function renderPost(num) {
     let post = posts[num]
     const fullName = document.querySelector('.post #full-name');
     const username = document.querySelector(".post #username")
